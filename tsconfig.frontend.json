@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "./frontend/assets/js",
+    "lib": ["ESNEXT", "DOM"]
+  },
+  "include": ["./src"]
+}
