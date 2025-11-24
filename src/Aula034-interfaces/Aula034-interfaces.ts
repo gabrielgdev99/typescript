@@ -1,15 +1,20 @@
-type PersonType = {
+interface PersonName {
   name: string;
   lastName: string;
   fullName(): string;
 };
 
-type PersonAge = {
+interface PersonAge {
   age: number;
   height: number;
 };
 
-export class Person implements PersonType, PersonAge {
+//type PersonType = PersonName & PersonAge //Union de types
+
+interface PersonType extends PersonName, PersonAge {} //Union de interface
+
+
+export class Person implements PersonName, PersonAge {
   constructor(
     public name: string,
     public lastName: string,
