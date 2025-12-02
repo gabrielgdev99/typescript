@@ -11,5 +11,5 @@
     "removeComments": true,
     "noEmitOnError": true
   },
-  "include": ["./src"]
+  "include": ["./src", "dist/behavioural/observer/observer.js"]
 }
