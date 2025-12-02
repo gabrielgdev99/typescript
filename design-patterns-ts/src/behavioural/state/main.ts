@@ -1,0 +1,10 @@
+import { ShoppingOrder } from './shopping-order/shopping-order';
+
+const order = new ShoppingOrder();
+order.approvePayment();
+order.waitPayment();
+order.rejectPayment();
+order.waitPayment();
+order.approvePayment();
+
+order.shipOrder();
