@@ -6,5 +6,8 @@ export const Container = styled.main`
     font-size: ${theme.font.sizes.medium}
     margin: 0 auto;
     padding: ${theme.spacings.medium};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   `}
 `;

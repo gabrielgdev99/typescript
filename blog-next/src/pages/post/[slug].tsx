@@ -3,20 +3,14 @@ import { getPostsCount } from "../../data/posts/count-all-posts";
 import { getAllPosts } from "../../data/posts/get-all-posts";
 import { getPostBySlug } from "../../data/posts/get-post";
 import { Post } from "../../domain/posts/post";
-import { BlocksRenderer } from "@strapi/blocks-react-renderer";
+import { PostP } from "../../containers/Post";
 
 export type DynamicPostProps = {
   post: Post;
 };
 
 export const DynamicPost = ({ post }: DynamicPostProps) => {
-  return (
-    <article>
-      <h1>{post.title}</h1>
-
-      <BlocksRenderer content={post.content} />
-    </article>
-  );
+  return <PostP post={post} />;
 };
 
 export default DynamicPost;
